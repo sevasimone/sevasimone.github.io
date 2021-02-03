@@ -4,6 +4,17 @@
     <title> Welcome to Seva! </Title>
     <link rel="shortcut icon" href="IMG_1034.jpg">
     <style>
+    body {
+    margin:0;
+    padding:0;
+}
+    .rotate270 {
+      -webkit-transform:rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      transform: rotate(270deg);
+    }
       #One {
         position: absolute;
         color: White
@@ -98,6 +109,8 @@
   z-index: 133;
   cursor:help;
 }
+
+
 #s1 {
   position: absolute;
   Top:305px;
@@ -105,38 +118,55 @@
   rotate:30;
   z-index: 133;
   cursor:help;
+  padding: 15px 15px 15px 15px;
+border: 2px solid #e6e6e6;
+background-color: white;
+
+
 }
 #s2 {
   position: absolute;
   Top:1005px;
-  Left:325px;
+  Left:425px;
   rotate:30;
   z-index: 133;
   cursor:help;
+   padding: 15px 15px 15px 15px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
 }
 #s3 {
   position: absolute;
   Top:1705px;
-  Left:325px;
+  Left:275px;
   rotate:30;
   z-index: 133;
   cursor:help;
+  padding: 15px 15px 15px 15px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
 }
 #s4 {
   position: absolute;
   Top:2405px;
-  Left:325px;
+  Left:125px;
   rotate:30;
   z-index: 133;
   cursor:help;
+  padding: 15px 15px 15px 15px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
 }
 #s5 {
   position: absolute;
   Top:3105px;
-  Left:325px;
+  Left:455px;
   rotate:30;
   z-index: 133;
   cursor:help;
+  padding: 15px 15px 15px 15px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
 }
 #s6 {
   position: absolute;
@@ -145,14 +175,22 @@
   rotate:30;
   z-index: 133;
   cursor:help;
+  padding: 15px 15px 15px 15px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
+
 }
 #s7 {
   position: absolute;
   Top:4505px;
-  Left:325px;
+  Left:655px;
   rotate:30;
   z-index: 133;
   cursor:help;
+  padding: 15px 15px 15px 15px;
+  border: 2px solid #e6e6e6;
+  background-color: white;
+
 }
 
 
@@ -164,17 +202,20 @@
         border-radius: 5px 5px 5px 5px;
       }
 
-      audio {
+      #audio {
         position: fixed;
-        width: 35vw;
+        width: 5vw;
         Bottom: 225px;
-        right: 15vw;
+        left: 1vw;
         border-radius: 5px 5px 5px 5px;
       }
 
     </style>
   </head>
-  <body>
+  <body style="background-color:white">
+
+    <img id=kiev src="kiev.png" class="rotate270" style="position:fixed; float:right; right:0px;">
+
 <img id=s1 src="strand2008.JPG" style="width:960px;height:600px">
 <img id=s2 src="Strand2011.JPG" style="width:1060px;height:600px">
 <img id=s3 src="Strand2014.JPG" style="width:1100px;height:600px">
@@ -190,7 +231,7 @@
 
 </div>
 
-    <audio controls src="dmv1.m4a"></audio>
+    <audio id=audio controls src="dmv1.m4a" </audio>
       <img id=name src="Seva_Gif.gif">
   <a href=Outside.html>   <img id=RockQuestion src="Outside.jpg" style="width:960px;height:600px"> </a>
 
